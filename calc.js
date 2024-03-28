@@ -5,6 +5,11 @@ let string = ' ';
 
 buttons.forEach(element => {
     element.addEventListener('click', (b) => {
+        let audiio = document.getElementById("play");
+                console.log(audiio);
+                audiio.currentTime = 0
+                audiio.play();
+               ;
         if (b.target.innerText == '=') {
             
              if(string == " "){
@@ -83,19 +88,26 @@ body.addEventListener("keydown" , function(e){
     if (e.key === 'Backspace'){
       
       let btn =  document.getElementById("back");
-      
+      let audiio = document.getElementById("play");
+                console.log(audiio);
+                audiio.play();
       btn.classList.add("sup");
       btn.click();
       console.log(btn);
      }
      if(e.key === "Delete"){
-        
+        let audiio = document.getElementById("play");
+                console.log(audiio);
+                audiio.play();
         let btn =  document.getElementById("AC");
         btn.classList.add("sup");
         btn.click();
+
      }
       if(e.code === "Space"){
-    
+        let audiio = document.getElementById("play");
+        console.log(audiio);
+        audiio.play();
         console.log(e.key);
         document.getElementsByClassName("clac")[0].click();
         document.getElementsByClassName("clac")[0].classList.add("sup")
@@ -108,6 +120,9 @@ body.addEventListener("keypress", function (e) {
     if (!eventHandled) {
         if (e.key === 'Enter') {
             e.preventDefault();
+            let audiio = document.getElementById("play");
+                console.log(audiio);
+                audiio.play();
             console.log(e.key);
             document.getElementsByClassName("clac")[0].click();
             document.getElementsByClassName("clac")[0].classList.add("sup")
@@ -118,6 +133,9 @@ body.addEventListener("keypress", function (e) {
             console.log(buttoni);
 
             if (buttoni) {
+                let audiio = document.getElementById("play");
+                console.log(audiio);
+                audiio.play();
                 buttoni.click();
                 buttoni.classList.add("sup")
             }
