@@ -18,6 +18,10 @@ buttons.forEach(element => {
             else{
                 try {
                     string = String(eval(string));
+                    if(string === undefined || string === null){
+                        string = '0';
+
+                    }
                     integer.value = string;
                 } catch (error) {
                     // Handle error gracefully
@@ -35,6 +39,7 @@ buttons.forEach(element => {
                 integer.value = string;
             }
             else{
+                
             string = string.substring(0, string.length - 1);
             integer.value = string;
             }
@@ -127,10 +132,10 @@ body.addEventListener("keypress", function (e) {
 // Reset eventHandled when the key is released
 body.addEventListener("keyup", function () {
     eventHandled = false;
-    setTimeout(() => {
+    
         buttons.forEach(element => {
             element.classList.remove("sup");
         });
-    }, 500);
+    
     
 });

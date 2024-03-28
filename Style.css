@@ -49,6 +49,7 @@ button{
     font-weight: 600;
     margin: 10px;
     border: 0;
+    transition: all 0.3s ease;
     border-radius: 50%;
     box-shadow: -5px -6px 15px #000;
     outline: 1px solid #313131  ;
