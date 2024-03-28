@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset = "UTF-8">
+        <meta name  = "viewport" content="width = device width , intial-scale=1.0">
+        <title>Basic Calculator</title>    
+        <link rel="stylesheet" href = "Style.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <link rel="shortcut icon" href="calculator-solid.svg" type="image/x-icon">
+    </head>
+    <body>
+       
+        <div class="borderframe"> 
+            <div class="dis"> 
+            <input type="text" id="integer" value = "0" placeholder="0" disabled>
+            </div>
+            <div class="buttons">
+           <div class="rows">
+            <button id = "%" type = "button" class = "opr">x²</button>
+            <button id = "/"type = "button"class = "opr">/</button>
+            <button  id ="+" type = "button"class = "opr">+</button>
+            <button id="*" type = "button"class = "opr">* </button>
+           </div>
+           <div class="rows">
+            <button id = "7" type = "button">7</button>
+            <button id = "8" type = "button">8</button>
+            <button id ="9"type = "button">9</button>
+            <button id = "-" type = "button"class = "opr">-</button>
+           
+           
+           
+           </div>
+           <div class="rows">
+            <button id = "4" type = "button" >4</button>
+            <button id = "5" type = "button" >5</button>
+            <button id = "6" type = "button" >6</button>
+            <button id = "AC"type = "button" class = "opr">AC</button>
+           </div>
+           <div class="rows">
+            <button id="1" type = "button">1</button>
+            <button id ="2" type = "button">2</button>
+            <button id ="3" type = "button">3</button>
+            <button id = "back" type = "button" class = "opr">
+                <i class="fa-solid fa-delete-left"></i></button>
+           </div>
+           <div class="rows">
+            <button type = "button"id = "plusMinus">&#xB1;</button>
+            <button id = "0" type = "button">0</button>
+            <button  id = "." type = "button">.</button>
+            <button class ="clac" type = "button"  id = "="> &#x3D;</button>
+           </div>
+           </div>
+           <script src="calc.js"></script>
+        </div>
+        
+    </body>
+
+</html>
